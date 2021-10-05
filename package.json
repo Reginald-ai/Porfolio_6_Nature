@@ -1,0 +1,26 @@
+{
+  "name": "nature",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "core-js": "^3.18.1",
+    "nuxt": "^2.15.8",
+    "vuetify": "^2.5.9"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.1",
+    "fibers": "^5.0.0",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^10.1.1",
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
