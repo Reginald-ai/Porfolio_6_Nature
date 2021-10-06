@@ -15,6 +15,9 @@ export default {
 </script>
 
 <style lang="scss">
+.v-application {
+  font-family: poppins;
+}
 .theme--dark.v-application {
   background: none;
 }

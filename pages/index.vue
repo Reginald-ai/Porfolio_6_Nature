@@ -4,7 +4,14 @@
       <div class="nature-intro">
         <v-container>
           <v-row class="align-center">
-            <v-col class="cdetBlue" cols="12" sm="12" md="6" lg="6">
+            <v-col
+              data-aos="fade-right"
+              class="cdetBlue"
+              cols="12"
+              sm="12"
+              md="6"
+              lg="6"
+            >
               <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam
@@ -22,7 +29,11 @@
               </p>
             </v-col>
             <v-col cols="12" sm="12" md="6" lg="6">
-              <SvgHelpNature class="w-100" />
+              <SvgHelpNature
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="w-100"
+              />
             </v-col>
           </v-row>
         </v-container>
@@ -33,6 +44,9 @@
           <v-row>
             <v-col
               v-for="(sCard, i) in sCards"
+              data-aos="flip-right"
+              data-aos-duration="1000"
+              data-aos-delay="250"
               :key="i"
               cols="12"
               sm="12"
@@ -52,14 +66,27 @@
                   alt=""
                 />
                 <v-card-title>{{ sCard.title }}</v-card-title>
-                <hr />
+                <v-divider color="primary"></v-divider>
+
                 <v-card-subtitle class="pb-3 cdetBlue">
                   {{ sCard.subtitle.slice(0, 160) }} . . .
                 </v-card-subtitle>
 
                 <v-card-text class="cdetBlue">
-                  {{ sCard.text1.slice(0, 190) }} . . .
+                  {{ sCard.text1.slice(0, 130) }} . . .
                 </v-card-text>
+                <!-- <v-divider color="primary"></v-divider> -->
+                <v-card-actions>
+                  <v-btn color="orange" text> Share </v-btn>
+                  <NuxtLink
+                    :to="`/home-id/${sCard.id}`"
+                    class="btn-yellow"
+                    color="orange"
+                    text
+                  >
+                    Explore
+                  </NuxtLink>
+                </v-card-actions>
               </v-card>
             </v-col>
           </v-row>
@@ -69,10 +96,25 @@
       <div class="nature-guide py-16">
         <v-container>
           <v-row class="cdetBlue align-center">
-            <v-col cols="12" sm="12" md="6" lg="6">
+            <v-col
+              data-aos-duration="1000"
+              data-aos="fade-up"
+              cols="12"
+              sm="12"
+              md="6"
+              lg="6"
+            >
               <SvgHelWorld />
             </v-col>
-            <v-col cols="12" sm="12" md="6" lg="6">
+            <v-col
+              data-aos-duration="1000"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              cols="12"
+              sm="12"
+              md="6"
+              lg="6"
+            >
               <h1>Lorem ipsum dolor, sit amet consectetur adipisicing.</h1>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -109,6 +151,12 @@ export default {
     sCards() {
       return this.$store.state.sCards;
     },
+    // sCard() {
+    //   return this.$store.getters.getsCards(this.$route.parms.id);
+    // },
+    mounted() {
+      console.log(sCards);
+    },
   },
 };
 </script>
@@ -116,7 +164,7 @@ export default {
 <style lang="scss" >
 .nature-wrapper {
   .nature-intro {
-    // background: url("~assets/img/home/Confetti.svg?inline");
+    background: url("~assets/img/home/Confetti.svg?inline");
   }
   .nature-save {
     // background: url('@/assets/img/home/Leave-10s-1920px.svg?inline"');
