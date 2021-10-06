@@ -1,6 +1,7 @@
 const state = () => ({
   sCards: [
     {
+      id: 1,
       img: "1.png",
       title: "Global Warming",
       subtitle:
@@ -13,6 +14,7 @@ const state = () => ({
         "Global warming has presented another issue called climate change. Sometimes these phrases are used interchangeably, however, they are different. Climate change refers to changes in weather patterns and growing seasons around the world. It also refers to sea level rise caused by the expansion of warmer seas and melting ice sheets and glaciers. Global warming causes climate change, which poses a serious threat to life on earth in the forms of widespread flooding and extreme weather. Scientists continue to study global warming and its impact on Earth."
     },
     {
+      id: 2,
       img: "2.png",
       title: "Save Animals",
       subtitle:
@@ -25,6 +27,7 @@ const state = () => ({
         "The best way to protect our planet’s endangered wildlife is to ensure that strong laws are in place and that severe penalties are levied against the criminals who deal in wildlife trafficking.  Humans are the reason that so many of our most iconic and important wildlife are struggling to survive, and together, humans can work to save them.The best way to protect our planet’s endangered wildlife is to ensure that strong laws are in place and that severe penalties are levied against the criminals who deal in wildlife trafficking.  Humans are the reason that so many of our most iconic and important wildlife are struggling to survive, and together, humans can work to save them. Despite our successes, opponents continue to block similar attempts across the country."
     },
     {
+      id: 3,
       img: "3.png",
       title: "Planting trees",
       subtitle:
@@ -37,6 +40,7 @@ const state = () => ({
         "Trees are the most important part of the ecosystem which helps in balancing the climate and the environment. A forest comprises of trees and plants helps to reverse the global warming which adversely maintain the health of the earth. Global warming is the biggest problem facing by earth and the humankind nowadays which adversely effects our earth and results of the same are observed in these days are:"
     },
     {
+      id: 4,
       img: "4.png",
       title: "Good communication ",
       subtitle:
@@ -51,6 +55,12 @@ const state = () => ({
     }
   ]
 });
+
+const getters = {
+  getsCards: state => id => {
+    return state.sCards.find(sCard => sCard.id == id);
+  }
+};
 export default {
   state,
   getters
