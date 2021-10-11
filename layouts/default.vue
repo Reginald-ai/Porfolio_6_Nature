@@ -9,9 +9,7 @@
 </template>
 
 <script>
-export default {
-  theme: { light: true },
-};
+export default {};
 </script>
 
 <style lang="scss">
@@ -21,4 +19,10 @@ export default {
 .theme--dark.v-application {
   background: none;
 }
+
+// @media (min-width: 1904px) {
+//   .container {
+//     max-width: 1385px;
+//   }
+// }
 </style>
