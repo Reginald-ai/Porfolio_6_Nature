@@ -104,7 +104,7 @@
               md="6"
               lg="6"
             >
-              <SvgHelWorld />
+              <SvgHelWorld class="w-100" />
             </v-col>
             <v-col
               data-aos-duration="1000"
