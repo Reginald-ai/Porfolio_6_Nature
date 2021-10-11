@@ -101,6 +101,10 @@
             data-aos-delay="500"
             data-aos="fade-up"
             data-aos-duration="1000"
+            cols="12"
+            md="6"
+            sm="12"
+            lg="6"
           >
             <SvgGoal2 class="w-100" />
           </v-col>
@@ -108,6 +112,10 @@
             data-aos-delay="500"
             data-aos="fade-up"
             data-aos-duration="1000"
+            cols="12"
+            md="6"
+            sm="12"
+            lg="6"
           >
             <h1>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus

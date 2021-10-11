@@ -2,7 +2,7 @@
   <div class="faqs">
     <div class="faqs-first">
       <v-container>
-        <v-col cols="6">
+        <v-col cols="12" sm="12" md="6" lg="6">
           <h1>Thank you Messages</h1>
           <p>
             I will forever be grateful to you for your help. Thank you! Some
@@ -19,7 +19,7 @@
             But, let me try a little. Thanks a lot for your support!
           </p>
         </v-col>
-        <v-col> </v-col>
+        <v-col cols="12" sm="12" md="6" lg="6"> </v-col>
       </v-container>
     </div>
     <div class="credits">
