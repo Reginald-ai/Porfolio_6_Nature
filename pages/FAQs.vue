@@ -3,7 +3,8 @@
     <div class="faqs-first">
       <v-container>
         <v-col cols="12" sm="12" md="6" lg="6">
-          <h1>Thank you Messages</h1>
+          <h2>Thank you Messages</h2>
+          <br />
           <p>
             I will forever be grateful to you for your help. Thank you! Some
             people deserve more than just a thank you. Just like you! Thanks for
@@ -18,6 +19,9 @@
             Thank You! Thank you won’t be enough for what you’ve done for me.
             But, let me try a little. Thanks a lot for your support!
           </p>
+
+          <p>Sincerely,</p>
+          <p>Reginald Ivan Mangubat</p>
         </v-col>
         <v-col cols="12" sm="12" md="6" lg="6"> </v-col>
       </v-container>
